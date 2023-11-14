@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: changeBackground 100s infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@keyframes changeBackground {
+  0% {
+    background-image: url('./assets/3\ \(1\).jpg');
+  }
+  15% {
+    background-image: url('.//assets/Frankfurt_sunset_with_light.jpg');
+  }
+  25% {
+    background-image: url('./assets/7.jpg');
+  }
+  30% {
+    background-image: url('./assets/blue.jpeg');
+  }
+  40% {
+    background-image: url('.//assets/16x9_M.jpg');
+  }
+  50% {
+    background-image: url('./assets/3\ \(1\).jpg');
+  }
+  60% {
+    background-image: url('./assets/9.jpg');
+  }
+  70% {
+    background-image: url('.//assets/8.jpg');
+  }
+  85% {
+    background-image: url('./assets/night.jpg');
+  }
+  100% {
+    background-image: url('./assets/Frankfurt_sunset_with_light.jpg');
+  }
+}
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 7rem;
+}
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.app:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.app .search {
+  text-align: center;
+  padding: 1rem;
+}
+.app input {
+  margin-top: 4rem;
+  padding: .8rem 2.5rem;
+  font-size: 1.6rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #F8F8F8;
+}
+::placeholder {
+  color: #F8F8F8;
+}
+.container {
+  max-width: 80%;
+  height: 50vh;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app .top {
+  width: 80%;
+  margin: 1rem auto;
+}
+.app .description {
+  position: relative;
+  right: -74%;
+}
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 4rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.2);
+}
+
+@media (max-width: 767px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+
+
+
+
+
+
+
